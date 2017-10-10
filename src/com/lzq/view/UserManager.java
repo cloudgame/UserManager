@@ -46,8 +46,6 @@ public class UserManager extends HttpServlet {
 		out.println("<center><table border='1' cellspacing='0'></center>");
 		out.println("<tr><th>用户ID</th><th>姓名</th><th>性别</th><th>年龄</th><th>E-mail</th></tr>");
 				
-		String sql="select * from userinfo limit ?,?";
-		String para[]={(pageNow-1)*pageSize+"",pageSize+""};
 		
 		
 		
