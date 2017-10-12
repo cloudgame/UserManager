@@ -21,6 +21,7 @@ public class MainFrame extends HttpServlet {
 		out.println("  <BODY>");
 		out.println("  <h1>用户管理系统</h1></br>");
 		out.println("<a href='/UserManager/UserManager'>用户管理</a></br>");
+		out.println("<a href='/UserManager/UserInfoCUD?type=gotoAddUser'>添加用户</a></br>");
 		out.println("  </BODY>");
 		out.println("</HTML>");
 		out.flush();

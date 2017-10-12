@@ -58,6 +58,7 @@ public class SqlHelper {
 				}
 				//执行“增”“删”“改”操作
 				ps.executeUpdate();
+				b=true;
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -71,9 +72,12 @@ public class SqlHelper {
 		try {
 			connection();
 			ps=ct.prepareStatement(sql);
-			for(int i = 0;i<para.length;i++)
+			if(para!=null)
 			{
-				ps.setString(i+1, para[i]);
+				for(int i = 0;i<para.length;i++)
+				{
+					ps.setString(i+1, para[i]);
+				}
 			}
 			rs=ps.executeQuery();
 		} catch (Exception e) {

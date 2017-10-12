@@ -33,9 +33,23 @@
   <servlet>
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>UserInfoCRUD</servlet-name>
-    <servlet-class>com.lzq.control.UserInfoCRUD</servlet-class>
+    <servlet-name>UserInfoCUD</servlet-name>
+    <servlet-class>com.lzq.control.UserInfoCUD</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUserInfo</servlet-name>
+    <servlet-class>com.lzq.view.UpdateUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserInfo</servlet-name>
+    <servlet-class>com.lzq.view.AddUserInfo</servlet-class>
+  </servlet>
+
+
 
 
 
@@ -60,8 +74,16 @@
     <url-pattern>/UserManager</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-    <servlet-name>UserInfoCRUD</servlet-name>
-    <url-pattern>/UserInfoCRUD</url-pattern>
+    <servlet-name>UserInfoCUD</servlet-name>
+    <url-pattern>/UserInfoCUD</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserInfo</servlet-name>
+    <url-pattern>/UpdateUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserInfo</servlet-name>
+    <url-pattern>/AddUserInfo</url-pattern>
   </servlet-mapping>	
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
